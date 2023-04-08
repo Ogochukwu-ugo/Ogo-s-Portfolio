@@ -654,6 +654,10 @@ video {
   margin-top: 3rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .block {
   display: block;
 }
@@ -841,6 +845,11 @@ video {
   --tw-gradient-to-position:  ;
 }
 
+.to-brand-color {
+  --tw-gradient-to: #3a0088 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
@@ -991,6 +1000,18 @@ video {
 
 .opacity-10 {
   opacity: 0.1;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .outline-none {
@@ -1229,5 +1250,46 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .xl\:w-12 {
+    width: 3rem;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
+  }
+
+  .xl\:w-3\/4 {
+    width: 75%;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .xl\:w-3 {
+    width: 0.75rem;
+  }
+
+  .xl\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .xl\:gap-4 {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-1\/2 {
+    width: 50%;
   }
 }

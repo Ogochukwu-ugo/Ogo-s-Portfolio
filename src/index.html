@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../assets/fontawesome/CSS/all.css">
+    <title>Ogo's Portfolio</title>
+    
+</head>
+<body class="antialiased bg-gradient-to-r from-black to-brand-color1 ">
+    <header class="bg-transparent text-text-color md:px-12" id="navbar">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="cursor-pointer" href="/">
+                <img src="../images/Og-logo 1.png" alt="Logo" class="w-24">
+            </div>
+
+            <button id="toggle" class="mr-4 md:hidden ">
+                <i class="fa-solid fa-bars-staggered fa-xl" style="color: #cbb26a;
+                "></i>
+            </button>
+
+            <nav id="nav" class="fixed top-14 bottom-0 -right-full bg-brand-color w-52 md:sticky z-50 md:bg-transparent transition-all">
+                <ul class="md:flex md:-ml-12">
+                    <li>
+                        <a class="block p-2 md:p-4 hover:text-lg transition duration-300 active:text-accent-color" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="block p-2 md:p-4 hover:text-lg transition duration-300 active:text-accent-color" href="#project">Projects</a>
+                    </li>
+                    <li>
+                        <a class="block p-2 md:p-4 hover:text-lg transition duration-300 active:text-accent-color" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- portfolio body -->
+    <main>
+        <section class="justify-between items-center flex flex-col gap-4 mx-2 md:flex-row md:mx-12 mt-12">
+            <div class="text-slate-50 md:w-2/3 p-4">
+                <p class="text-lg">
+                    Hi ! I'm 
+                </p>
+                <h2 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="ogo">Ogochukwu</span> Ugorji
+                </h2>
+                <h5 class="text-xl font-medium text-slate-100 mb-4">Frontend Developer</h5>
+                <p class="text-base md:text-lg">
+                    A frontend developer who is passionate about transforming design concepts into usable products that improve people's daily lives.
+                </p>
+            </div>
+            <picture class="text-center">
+                <img src="../images/Ogo2.png" alt="Ogochukwu" class="object-contain mx-auto h-auto rounded-b-full">
+            </picture>
+            <div class="flex flex-row justify-center items-center text-center w-full md:h-[60vh] md:w-10 md:flex-col my-auto">
+                <div class="line"></div>
+                <div class="mx-2 md:mx-4 text-logo-color">
+                    <a href="https://github.com/Ogochukwu-ugo">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ogochukwu-ugorji1" class="mx-2 my-0 md:my-8">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                   <a href="www.twitter.com/OgochukwuUgorji">
+                        <i class="fa-brands fa-twitter"></i>
+                   </a>
+                </div>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="my-16 about" id="about">
+            <h3 class="text-slate-100 opacity-10 font-black text-4xl md:text-6xl text-center tracking-widest">ABOUT</h3>
+            <div class="flex flex-row-reverse justify-center items-center lg:justify-around my-3 mx-auto lg:pl-16">
+                <div class="ml-1 md:ml-8 my-auto py-2">
+                    <p class="md:w-2/3 text-sm md:text-2xl text-slate-50">
+                        I enjoy designing cool user interfaces and <span class="font-bold text-logo-color">coding beautiful and interactive</span> products.
+                        I'm specialized and committed to transforming design concepts into real-world products, 
+                        using solutions that leverage best-practice technologies to deliver exceptional user experiences.
+                    </p>
+                    <div class="w-28 bg-transparent border border-logo-color rounded-lg p-2 my-3 text-base font-medium text-center text-logo-color cursor-pointer">
+                        <a href="https://www.canva.com/design/DAFfH5GBvQM/bJUc0cIep8Qs1GCpTzHGlw/view?utm_content=DAFfH5GBvQM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_parent">View CV</a>
+                    </div>
+                </div>
+                <picture class="text-center">
+                    <img src="../images/Ogo2.png" alt="Ogochukwu" class="object-contain mx-auto h-auto rounded-b-full">
+                </picture>
+            </div>
+            <section class="mx-auto my-3 p-3 md:p-6 lg:p-10">
+                <h4 class="text-lg md:text-3xl font-bold text-center text-logo-color mb-5">Skills</h4>
+                <section class="grid grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 mx-auto">
+                    <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
+                        <picture class="text-center">
+                            <img src="../images/Html.png" alt="HTML-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                        </picture>
+                        <p class="text-lg md:text-3xl font-semibold">HTML5</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
+                        <picture class="text-center">
+                            <img src="../images/Css.png" alt="CSS-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                        </picture>
+                        <p class="text-lg md:text-3xl font-semibold">CSS</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
+                        <picture class="text-center">
+                            <img src="../images/Js.png" alt="JS-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                        </picture>
+                        <p class="text-lg md:text-3xl font-semibold">JavaScript</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
+                        <picture class="text-center">
+                            <img src="../images/Bootstrap.png" alt="BootStrap-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                        </picture>
+                        <p class="text-lg md:text-3xl font-semibold">Bootstrap5</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
+                        <picture class="text-center">
+                            <img src="../images/tailwind.png" alt="Tailwind-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                        </picture>
+                        <p class="text-lg md:text-3xl font-semibold">TailwindCSS</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
+                        <picture class="text-center">
+                            <img src="../images/react.png" alt="React-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                        </picture>
+                        <p class="text-lg md:text-3xl font-semibold">React</p>
+                    </div>
+                </section>
+            </section>
+            <div class="float-right -mt-6">
+                <svg class="animate-spin h-8 w-8 text-purple-700" width="100" height="45" viewBox="0 0 247 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M58.0086 39.2865L55.2403 53.5513L67.9514 60.5921L53.5294 62.3673L50.7612 76.6321L44.6162 63.4645L30.1942 65.2398L40.8183 55.3265L34.6733 42.159L47.3844 49.1998L58.0086 39.2865Z" fill="#3A0088"/>
+                    <path d="M121 0L125.49 13.8197H140.021L128.265 22.3607L132.756 36.1803L121 27.6393L109.244 36.1803L113.735 22.3607L101.979 13.8197H116.51L121 0Z" fill="#3A0088"/>
+                    <path d="M243.905 118.886L230.644 124.825L232.194 139.273L222.448 128.496L209.186 134.435L216.424 121.835L206.677 111.058L220.897 114.048L228.135 101.448L229.686 115.896L243.905 118.886Z" fill="#3A0088"/>
+                    <path d="M182.844 33.0327L193.092 43.3347L206.056 36.7721L199.425 49.7017L209.673 60.0037L195.327 57.6926L188.696 70.6222L186.461 56.2643L172.115 53.9533L185.079 47.3906L182.844 33.0327Z" fill="#3A0088"/>
+                    <path d="M40 168L44.4903 181.82H59.0211L47.2654 190.361L51.7557 204.18L40 195.639L28.2443 204.18L32.7346 190.361L20.9789 181.82H35.5097L40 168Z" fill="#3A0088"/>
+                    <path d="M121 202L125.49 215.82H140.021L128.265 224.361L132.756 238.18L121 229.639L109.244 238.18L113.735 224.361L101.979 215.82H116.51L121 202Z" fill="#3A0088"/>
+                    <path d="M190.545 173.49L199.883 184.622L213.357 179.181L205.655 191.502L214.994 202.635L200.895 199.118L193.194 211.44L192.182 196.944L178.083 193.427L191.556 187.985L190.545 173.49Z" fill="#3A0088"/>
+                    <path d="M20 101L24.4903 114.82H39.0211L27.2654 123.361L31.7557 137.18L20 128.639L8.2443 137.18L12.7346 123.361L0.97887 114.82H15.5097L20 101Z" fill="#3A0088"/>
+                    </svg>  
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <section class="my-16 p-1 md:p-6" id="project">
+            <h3 class="text-logo-color opacity-10 font-black text-4xl md:text-6xl text-center tracking-widest">PROJECTS</h3>
+            <p class="text-slate-50 text-sm md:text-xl font-normal my-3 md:my-6 p-4 text-center">Every project is <span class=" text-base md:text-2xl font-bold bg-gradient-to-r from-slate-100 via-logo-color to-text-color inline-block text-transparent bg-clip-text">one-of-a-kind,</span> and working on them teaches me more. Here are some of my works.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-1">
+                <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
+                  <img src="../images/i-val-home.png" alt="i-validate-app" class="webImage object-cover">
+                  <div class="text-center lg:text-start my-3 md:px-4">
+                    <h4 class="text-brand-color font-bold text-2xl lg:text-4xl">I-Validate</h4>
+                    <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A collaborative project for idea validation developed by a team of ten fast learners.</p>
+                  </div>
+                  <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 lg:px-4 ">
+                    <h6>REACT, BOOTSTARP</h6>
+                    <a href="https://github.com/ADA-Software-Engineering-Program/i-validate-landing-page" class="mx-2">
+                      <i class="fa-brands fa-github hover:text-brand-color"></i>
+                    </a>
+                    <a href="https://i-validate-landing-page.vercel.app/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                  </div>
+                </div>
+                <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
+                  <img src="../images/shortly.png" alt="i-validate-app" class="webImage object-cover">
+                  <div class="text-center lg:text-start my-3 md:px-4">
+                    <h4 class="text-brand-color font-bold text-2xl lg:text-4xl">Shortly</h4>
+                    <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A landing page where users can shorten any URL link and also copy it.</p>
+                  </div>
+                  <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 lg:px-4">
+                    <h6>REACT, BOOTSTARP</h6>
+                    <a href="https://github.com/Ogochukwu-ugo/Shortly-Url-Shortening-API" class="mx-2">
+                      <i class="fa-brands fa-github hover:text-brand-color"></i>
+                    </a>
+                    <a href="https://shortly-url-shortening-api-psi.vercel.app/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                  </div>
+                </div>
+                <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
+                  <img src="../images/todo.png" alt="i-validate-app" class="webImage object-cover">
+                  <div class="text-center lg:text-start my-3 md:px-4">
+                    <h4 class="text-brand-color font-bold text-2xl lg:text-4xl">Todo App</h4>
+                    <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A to-do list app that allows user to add, edit, update, and delete items. </p>
+                  </div>
+                  <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 lg:px-4">
+                    <h6>HTML, BOOTSTARP, JS</h6>
+                    <a href="https://github.com/Ogochukwu-ugo/Og-Todo-App" class="mx-2">
+                      <i class="fa-brands fa-github hover:text-brand-color"></i>
+                    </a>
+                    <a href="https://ogochukwu-ugo.github.io/Og-Todo-App/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                  </div>
+                </div>
+                <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
+                  <img src="../images/Quiz.png" alt="i-validate-app" class="webImage object-cover">
+                  <div class="text-center lg:text-start my-3 md:px-4">
+                    <h4 class="text-brand-color font-bold text-2xl lg:text-4xl">Quiz App</h4>
+                    <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A quiz app that allows users to put their knowledge to the test.</p>
+                  </div>
+                  <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 lg:px-4">
+                    <h6>HTML, CSS, JS</h6>
+                    <a href="https://github.com/Ogochukwu-ugo/Quiz-App" class="mx-2">
+                      <i class="fa-brands fa-github hover:text-brand-color"></i>
+                    </a>
+                    <a href="https://ogochukwu-ugo.github.io/Quiz-App/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                  </div>
+                </div>
+            </div>
+               
+        </section>
+
+        <!-- Contact -->
+        <section class="text-center my-16 p-1 md:p-6 contactSection" id="contact">
+            <h3 class="text-text-color opacity-10 font-black text-4xl md:text-6xl text-center tracking-widest">CONTACT</h3>
+            <p class="text-slate-50 text-sm md:text-xl font-normal my-3 md:my-6 p-4">Got a project Or In need of a new team mate to join you? <br> <span class="font-bold">Contact me. </span></p>
+            <form id="contactForm" class="mx-auto p-4">
+                <input type="hidden" name="contact_number">
+                <input type="text" name="user_name" id="fullName" placeholder="Enter your name" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color" required><br>
+                <input type="email" name="user_email" id="mail" placeholder="Enter your email" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color my-3" required><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color" required></textarea><br>
+                <input type="submit" value="Submit" class="w-full md:w-1/2 bg-logo-color  rounded-lg p-3 outline-none text-sm font-bold text-brand-color my-3"/>
+            </form>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="p-4 md:p-6 mx-auto justify-center items-center">
+        <hr class="border-1 text-logo-color">
+        <div class="flex flex-col md:flex-row justify-between items-center mx-auto">
+            <div class="cursor-pointer" href="/">
+                <img src="../images/Og-logo 1.png" alt="Logo" class="w-24">
+            </div>
+            <div class="flex text-logo-color justify-between items-center my-2 md:my-0 mx-auto">
+                <a href="https://github.com/Ogochukwu-ugo">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ogochukwu-ugorji1" class="mx-8">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+               <a href="www.twitter.com/OgochukwuUgorji">
+                    <i class="fa-brands fa-twitter"></i>
+               </a>
+            </div>
+            <p class="text-text-color text-xs">
+                <i class="fa-regular fa-copyright"></i> Copyright 2023, All right reserved.
+            </p>
+        </div>
+    </footer>
+
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("HlCz4uQFAGd-N7lrq");
+        })();   
+    </script>
+    <script type="text/javascript" src="./app.js"></script>
+   
+</body>
+</html>

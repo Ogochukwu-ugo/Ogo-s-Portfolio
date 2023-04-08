@@ -1,0 +1,135 @@
+.bgColor {
+    background-color: #cbb26a;
+    color: #5000bb;
+    opacity: .5;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.stayPut {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+} 
+
+.ogo {
+    color: transparent;
+    background-image: linear-gradient(to right, #d8c690, #cbb26a, #3a0088);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 20s linear infinite;
+    background-size: 1000%;
+}
+
+@keyframes animate {
+    0% { background-position: 0% 100%; }
+    50% { background-position: 100% 0%; }
+    100% { background-position: 0% 100%; }
+}
+
+
+
+
+.line {
+    width: 30%;
+    height: .1rem;
+    background-color: #cbb26a;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.about {
+    padding: 1.5rem;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background-color: rgba(203, 178, 106, 0.2);
+}
+
+.skillLogo {
+    width: 4rem;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.webImage {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-top-right-radius: .6rem;
+    border-top-left-radius: .6rem;
+}
+
+
+.cards {
+    width: 300px;
+    height: 380px;
+    margin: auto;
+    margin-top: .5rem;
+    background-color: rgb(203, 178, 106);
+    border-radius: .6rem;
+}
+
+.contactSection {
+    background-color: rgba(203, 178, 106, 0.2);
+}
+
+
+@media only screen and (min-width:768px) {
+    .line {
+        height: 30%;
+        width: .1rem;
+    }
+
+    .cardsWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 100%;
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+
+    .webImage {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .line {
+        height: 30%;
+        width: .1rem;
+    }
+
+    .cardsWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 450px;
+        height: 550px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .webImage {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+    }
+}

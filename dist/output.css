@@ -835,18 +835,13 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #cbb26a var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.to-brand-color1 {
-  --tw-gradient-to: #5000bb var(--tw-gradient-to-position);
+.to-brand-color {
+  --tw-gradient-to: #3a0088 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
 }
 
 .to-text-color {
   --tw-gradient-to: #d8c690 var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
-}
-
-.to-brand-color {
-  --tw-gradient-to: #3a0088 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
 }
 
@@ -889,6 +884,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-center {
@@ -998,20 +998,8 @@ video {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.opacity-10 {
-  opacity: 0.1;
-}
-
-.opacity-25 {
-  opacity: 0.25;
-}
-
 .opacity-20 {
   opacity: 0.2;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .outline-none {
@@ -1106,6 +1094,14 @@ video {
     margin-left: 2rem;
   }
 
+  .md\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
+  .md\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1154,6 +1150,10 @@ video {
     padding: 1.5rem;
   }
 
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1162,6 +1162,25 @@ video {
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:pl-3 {
+    padding-left: 0.75rem;
   }
 
   .md\:text-left {
@@ -1254,42 +1273,16 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .xl\:w-12 {
-    width: 3rem;
-  }
-
-  .xl\:w-1\/2 {
-    width: 50%;
-  }
-
   .xl\:w-3\/4 {
     width: 75%;
-  }
-
-  .xl\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-  .xl\:w-3 {
-    width: 0.75rem;
-  }
-
-  .xl\:gap-2 {
-    gap: 0.5rem;
   }
 
   .xl\:gap-4 {
     gap: 1rem;
   }
-}
 
-@media (min-width: 1536px) {
-  .\32xl\:w-1\/2 {
-    width: 50%;
+  .xl\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

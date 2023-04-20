@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../portfolio/images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../assets/fontawesome/CSS/all.css">
     <title>Ogo's Portfolio</title>
     
 </head>
-<body class="antialiased bg-gradient-to-r from-black to-brand-color ">
+<body class="antialiased bg-gradient-to-r from-black via-brand-color to-black overflow-x-hidden">
     <header class="bg-transparent text-text-color md:px-12" id="navbar">
         <div class="container mx-auto flex items-center justify-between">
             <div class="cursor-pointer" href="/">
@@ -41,8 +41,8 @@
 
     <!-- portfolio body -->
     <main>
-        <section class="justify-between items-center flex flex-col gap-4 mx-2 md:flex-row md:mx-12 mt-12">
-            <div class="text-slate-50 md:w-2/3 p-4">
+        <section class="justify-between items-center flex flex-col gap-4 mx-2 lg:flex-row lg:mx-12 mt-12">
+            <div class="text-slate-50 p-4 md:px-16 lg:w-1/2">
                 <p class="text-lg">
                     Hi ! I'm 
                 </p>
@@ -54,10 +54,16 @@
                     A frontend developer who is passionate about transforming design concepts into usable products that improve people's daily lives.
                 </p>
             </div>
-            <picture class="text-center">
-                <img src="../images/Ogo2.png" alt="Ogochukwu" class="object-contain mx-auto h-auto rounded-b-full">
-            </picture>
-            <div class="flex flex-row justify-center items-center text-center w-full md:h-[60vh] md:w-10 md:flex-col my-auto">
+            <div class="xl:-ml-22 relative">
+                <picture class="text-center">
+                    <img src="../images/Ogo2.png" alt="Ogochukwu" class="object-contain mx-auto h-auto heroImage">
+                </picture>
+                <div class="img-arc arc-right"></div>
+                <div class="small-circle small-circle-main"></div>
+                <div class="small-circle circle-right"></div>
+                <div class="mid-circle"></div>
+            </div>
+            <div class="flex flex-row justify-center items-center text-center w-full lg:h-[60vh] lg:w-10 lg:flex-col my-auto">
                 <div class="line"></div>
                 <div class="mx-2 md:mx-4 text-logo-color">
                     <a href="https://github.com/Ogochukwu-ugo">
@@ -164,7 +170,7 @@
                         </picture>
                         <div class="text-center lg:text-start my-3 md:px-4">
                             <h4 class="text-brand-color font-bold text-2xl lg:text-4xl">I-Validate</h4>
-                            <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A collaborative project for idea validation developed by a team of ten fast learners.</p>
+                            <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">An idea validation collaborative project, It's a web app that enable users validate business ideas.</p>
                         </div>
                         <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 md:px-6 xl:px-4 ">
                             <h6>REACT, BOOTSTARP</h6>
@@ -180,7 +186,7 @@
                         </picture>
                         <div class="text-center lg:text-start my-3 md:px-4">
                             <h4 class="text-brand-color font-bold text-2xl lg:text-4xl">Citadel-Realty-App</h4>
-                            <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A real estate collaborative project developed by a team of ten fast learners.</p>
+                            <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A real estate collaborative project, It's a web app that enable users search for an apartment from their comfort zone.</p>
                         </div>
                         <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 md:px-6 xl:px-4 ">
                             <h6>HTML, BOOTSTARP, JS</h6>
@@ -268,7 +274,7 @@
                 <input type="text" name="user_name" id="fullName" placeholder="Enter your name" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color" required><br>
                 <input type="email" name="user_email" id="mail" placeholder="Enter your email" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color my-3" required><br>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color" required></textarea><br>
-                <input type="submit" value="Submit" class="w-full md:w-1/2 bg-logo-color  rounded-lg p-3 outline-none text-sm font-bold text-brand-color my-3"/>
+                <input type="submit" value="Send Message" class="w-full md:w-1/2 bg-logo-color  rounded-lg p-3 outline-none text-sm font-bold text-brand-color my-3 cursor-pointer"/>
             </form>
         </section>
     </main>

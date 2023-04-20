@@ -1,7 +1,7 @@
 .bgColor {
     background-color: #cbb26a;
-    color: #5000bb;
-    opacity: .5;
+    color: #ffffff;
+    opacity: .7;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
@@ -54,6 +54,12 @@
     object-fit: contain;
 }
 
+.heroImage {
+    margin-top: 1.1rem;
+    border-bottom-left-radius: 52.5%;
+    border-bottom-right-radius: 32%;
+}
+
 
 .webImage {
     max-width: 100%;
@@ -79,13 +85,61 @@
     background-color: rgba(203, 178, 106, 0.2);
 }
 
+.img-arc {
+    position: absolute;
+    width: 400px;
+    height:400px;
+    top: -17%;
+    right: -21%;
+    border-left: .6rem solid #ffffff;
+    border-bottom: .6rem solid #ffffff;
+    border-radius: 50% 50% 50% 50%;
+    border-top: .6rem solid rgba(255, 255, 255, 0);
+    border-right: .6rem solid rgba(255, 255, 255, 0);
+    transform: rotate(0deg);
+    /* overflow: hidden; */
+}
+
+.arc-right {
+    transform: rotate(5deg);
+}
+
+.small-circle {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 71%;
+    top: -8.5%;
+    border-radius: 50%;
+    background-color: #cbb26a;
+}
+
+.circle-right {
+    right: -2%;
+    top: 82.5%;
+    background-color: #ffffff;
+}
+
+.mid-circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -8%;
+    top: 22%;
+    border-radius: 50%;
+    background-color: rgba(203, 178, 106, 0.6);
+    filter: blur(6px);
+    
+}
+
+@media only screen and (max-width:330px) {
+    .img-arc, .small-circle, .circle-right, .mid-circle, .arc-right {
+        display: none;
+    }
+}
+
 
 @media only screen and (min-width:768px) {
-    .line {
-        height: 30%;
-        width: .1rem;
-    }
-
     .cards {
         width: 100%;
         height: 450px;
@@ -99,6 +153,30 @@
         width: auto;
         height: auto;
         object-fit: cover;
+    }
+
+    .img-arc {
+        top: -17%;
+        right: -21%;
+    }
+    
+    .arc-right {
+        transform: rotate(5deg);
+    }
+    
+    .small-circle {
+        right: 71%;
+        top: -8.5%;
+    }
+    
+    .circle-right {
+        right: -2%;
+        top: 82.5%;
+    }
+    
+    .mid-circle {
+        left: -8%;
+        top: 22%;
     }
 }
 @media only screen and (min-width:1024px) {

@@ -10,6 +10,7 @@ module.exports = {
         'dark-purple': '#240055',
         'text-color': '#d8c690',
         'accent-color': '#be9e44',
+        'card-text': '373737'
       }
     },
   },

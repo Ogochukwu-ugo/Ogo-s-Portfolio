@@ -9,7 +9,6 @@ toggleBtn.addEventListener('click', function() {
   navMenu.classList.toggle('right-0');
 });
 
-
 // get the navbar links
 const navLinks = document.querySelectorAll('#nav a');
 
@@ -25,7 +24,6 @@ navLinks.forEach(link => {
     targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
-
 
 const header = document.getElementById("navbar");
 
@@ -45,18 +43,14 @@ const header = document.getElementById("navbar");
     }
   });
 
-
   window.onload = function() {
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // const contact_service = "service_iv0qow2";
-        // const contact_form = "template_q8dew5f";
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
        
-
         emailjs.sendForm('service_iv0qow2', 'template_q8dew5f', this)
             .then(function() {
                 console.log('SUCCESS!');

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A frontend developer's portfolio, showing her projects, github-links and project hosted links.">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="../main.css">
@@ -12,13 +13,13 @@
     
 </head>
 <body class="antialiased bg-gradient-to-r from-black via-brand-color to-black overflow-x-hidden">
-    <header class="bg-transparent text-text-color md:px-12" id="navbar">
+    <header class="bg-transparent text-text-color md:px-12" id="navbar" aria-label="Navigation-bar">
         <div class="container mx-auto flex items-center justify-between">
-            <div class="cursor-pointer" href="/">
-                <img src="../images/Og-logo 1.png" alt="Logo" class="w-24">
-            </div>
+            <a class="cursor-pointer" href="/" aria-label="Link to the landing page">
+                <img src="../images/Og-logo 1.png" alt="Logo" class="w-24" width="758" height="500">
+            </a>
 
-            <button id="toggle" class="mr-4 md:hidden ">
+            <button id="toggle" class="mr-4 md:hidden " aria-label="Button">
                 <i class="fa-solid fa-bars-staggered fa-xl" style="color: #cbb26a;
                 "></i>
             </button>
@@ -40,39 +41,39 @@
     </header>
 
     <!-- portfolio body -->
-    <main>
-        <section class="justify-between items-center flex flex-col gap-4 mx-2 lg:flex-row lg:mx-12 mt-12">
+    <main class="w-screen h-full">
+        <section class="justify-between items-center flex flex-col gap-4 mx-2 lg:flex-row lg:mx-12 " style="width: 92%; height: 100vh;">
             <div class="text-slate-50 p-4 md:px-16 lg:w-1/2 lg:px-0">
                 <p class="text-lg">
                     Hi ! I'm 
                 </p>
-                <h2 class="text-5xl md:text-7xl font-bold mb-6">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
                     <span class="ogo">Ogochukwu</span> Ugorji
-                </h2>
-                <h5 class="text-xl font-medium text-slate-100 mb-4">Frontend Developer</h5>
+                </h1>
+                <h2 class="text-xl font-medium text-slate-100 mb-4">Frontend Developer</h2>
                 <p class="text-base md:text-lg xl:w-3/4">
                     A frontend developer who is passionate about transforming design concepts into usable products that improve people's daily lives.
                 </p>
             </div>
             <div class="xl:-ml-22 relative">
                 <picture class="text-center">
-                    <img src="../images/Ogo2.png" alt="Ogochukwu" class="object-contain mx-auto h-auto heroImage">
+                    <img src="../images/Ogo2.png" alt="Ogochukwu" class="object-contain mx-auto h-auto heroImage" width="322" height="312">
                 </picture>
                 <div class="img-arc arc-right"></div>
-                <div class="small-circle small-circle-main"></div>
+                <div class="small-circle"></div>
                 <div class="small-circle circle-right"></div>
                 <div class="mid-circle"></div>
             </div>
             <div class="flex flex-row justify-center items-center text-center w-full lg:h-[60vh] lg:w-10 lg:flex-col my-auto">
                 <div class="line"></div>
                 <div class="mx-2 md:mx-4 text-logo-color">
-                    <a href="https://github.com/Ogochukwu-ugo">
+                    <a href="https://github.com/Ogochukwu-ugo" title="github-link" aria-label="link text">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/ogochukwu-ugorji1" class="mx-2 my-0 md:my-8">
+                    <a href="https://www.linkedin.com/in/ogochukwu-ugorji1" class="mx-2 my-0 md:my-8" title="linkedin-link" aria-label="link text">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
-                   <a href="www.twitter.com/OgochukwuUgorji">
+                   <a href="www.twitter.com/OgochukwuUgorji" title="twitter-link" aria-label="link text">
                         <i class="fa-brands fa-twitter"></i>
                    </a>
                 </div>
@@ -92,11 +93,11 @@
                             using solutions that leverage best-practice technologies to deliver exceptional user experiences.
                         </p>
                         <div class="w-28 bg-transparent border border-logo-color rounded-lg p-2 my-3 text-base font-medium text-center text-logo-color cursor-pointer">
-                            <a href="https://www.canva.com/design/DAFfH5GBvQM/bJUc0cIep8Qs1GCpTzHGlw/view?utm_content=DAFfH5GBvQM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_parent">View CV</a>
+                            <a href="https://www.canva.com/design/DAFfH5GBvQM/bJUc0cIep8Qs1GCpTzHGlw/view?utm_content=DAFfH5GBvQM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_parent" title="canva-link" aria-label="link text">View CV</a>
                         </div>
                     </div>
                     <picture class="text-center">
-                        <img src="../images/Ogo2.png" alt="Ogochukwu" class="object-contain mx-auto h-auto rounded-b-full">
+                        <img src="../images/Ogo2.png" alt="Ogochukwu" class="object-contain mx-auto h-auto rounded-b-full" loading="lazy" width="322" height="312">
                     </picture>
                 </div>
             </div>
@@ -106,37 +107,37 @@
                     <section class="grid grid-cols-2 lg:grid-cols-3  gap-5 lg:gap-8 mx-auto">
                         <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
                             <picture class="text-center">
-                                <img src="../images/Html.png" alt="HTML-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                                <img src="../images/Html.png" alt="HTML-Logo" class="skillLogo hover:animate-spin h-3 w-3" loading="lazy" width="324" height="365">
                             </picture>
                             <p class="text-lg md:text-3xl font-semibold">HTML5</p>
                         </div>
                         <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
                             <picture class="text-center">
-                                <img src="../images/Css.png" alt="CSS-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                                <img src="../images/Css.png" alt="CSS-Logo" class="skillLogo hover:animate-spin h-3 w-3" loading="lazy" width="324" height="324">
                             </picture>
                             <p class="text-lg md:text-3xl font-semibold">CSS</p>
                         </div>
                         <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
                             <picture class="text-center">
-                                <img src="../images/Js.png" alt="JS-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                                <img src="../images/Js.png" alt="JS-Logo" class="skillLogo hover:animate-spin h-3 w-3" loading="lazy" width="324" height="324">
                             </picture>
                             <p class="text-lg md:text-3xl font-semibold">JavaScript</p>
                         </div>
                         <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
                             <picture class="text-center">
-                                <img src="../images/Bootstrap.png" alt="BootStrap-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                                <img src="../images/Bootstrap.png" alt="BootStrap-Logo" class="skillLogo hover:animate-spin h-3 w-3" loading="lazy" width="324" height="324">
                             </picture>
                             <p class="text-lg md:text-3xl font-semibold">Bootstrap5</p>
                         </div>
                         <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
                             <picture class="text-center">
-                                <img src="../images/tailwind.png" alt="Tailwind-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                                <img src="../images/tailwind.png" alt="Tailwind-Logo" class="skillLogo hover:animate-spin h-3 w-3" loading="lazy" width="324" height="324">
                             </picture>
                             <p class="text-lg md:text-3xl font-semibold">TailwindCSS</p>
                         </div>
                         <div class="flex flex-col md:flex-row justify-center items-center md:justify-around bg-brand-color p-4 rounded-xl text-slate-100 h-32">
                             <picture class="text-center">
-                                <img src="../images/react.png" alt="React-Logo" class="skillLogo hover:animate-spin h-3 w-3">
+                                <img src="../images/react.png" alt="React-Logo" class="skillLogo hover:animate-spin h-3 w-3" loading="lazy" width="324" height="324">
                             </picture>
                             <p class="text-lg md:text-3xl font-semibold">React</p>
                         </div>
@@ -158,7 +159,6 @@
         </section>
 
         <!-- Projects -->
-
         <section class="my-16 p-1 md:p-6" id="project">
             <h3 class="text-logo-color opacity-20 font-black text-4xl md:text-6xl text-center tracking-widest">PROJECTS</h3>
             <p class="text-slate-50 text-sm md:text-xl font-normal my-3 md:my-6 p-4 text-center">Every project is <span class=" text-base md:text-2xl font-bold bg-gradient-to-r from-slate-100 via-logo-color to-text-color inline-block text-transparent bg-clip-text">one-of-a-kind,</span> and working on them teaches me more. Here are some of my works.</p>
@@ -166,103 +166,102 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-1 xl:gap-4 ">
                     <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
                         <picture>
-                                <img src="../images/validate.png" alt="I-Validate-App" class="webImage object-cover">
+                                <img src="../images/validate.png" alt="I-Validate-App" class="webImage object-cover" loading="lazy" width="758" height="500">
                         </picture>
                         <div class="text-center lg:text-start my-3 md:px-4">
                             <h4 class="text-brand-color font-bold text-2xl lg:text-3xl">I-Validate</h4>
-                            <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">An idea validation collaborative project, It's a web app that enable users validate business ideas.</p>
+                            <p class="text-base lg:text-xl font-semibold text-card-text my-3">An idea validation collaborative project, It's a web app that enable users validate business ideas.</p>
                         </div>
-                        <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 md:px-6 xl:px-4 ">
-                            <h6>REACT, BOOTSTARP</h6>
-                            <a href="https://github.com/ADA-Software-Engineering-Program/i-validate-landing-page" class="mx-2">
+                        <div class="flex text-xs lg:text-sm font-semibold text-card-text text-center md:text-left px-1 md:px-6 xl:px-4 ">
+                            <h5>REACT, BOOTSTARP</h5>
+                            <a href="https://github.com/ADA-Software-Engineering-Program/i-validate-landing-page" class="mx-2" title="github-link" aria-label="link text">
                             <i class="fa-brands fa-github hover:text-brand-color"></i>
                             </a>
-                            <a href="https://i-validate-landing-page.vercel.app/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                            <a href="https://i-validate-landing-page.vercel.app/" target="_blank" class="hover:text-brand-color cursor-pointer" title="website-link" aria-label="link text">VISIT THE WEBSITE</a>
                         </div>
                     </div>
                     <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
                         <picture>
-                                <img src="../images/citadel-realty.png" alt="Citadel-Realty-App" class="webImage object-cover">
+                                <img src="../images/citadel-realty.png" alt="Citadel-Realty-App" class="webImage object-cover" loading="lazy" width="758" height="500">
                         </picture>
                         <div class="text-center lg:text-start my-3 md:px-4">
                             <h4 class="text-brand-color font-bold text-2xl lg:text-3xl">Citadel-Realty-App</h4>
-                            <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A real estate collaborative project, It's a web app that enable users search for an apartment from their comfort zone.</p>
+                            <p class="text-base lg:text-xl font-semibold text-card-text my-3">A real estate collaborative project, It's a web app that enable users search for an apartment from their comfort zone.</p>
                         </div>
-                        <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 md:px-6 xl:px-4 ">
-                            <h6>HTML, BOOTSTARP, JS</h6>
-                            <a href="https://github.com/Ogochukwu-ugo/TeamSuccess-Citadel-Realty-App" class="mx-2">
+                        <div class="flex text-xs lg:text-sm font-semibold text-card-text text-center md:text-left px-1 md:px-6 xl:px-4 ">
+                            <h5>HTML, BOOTSTARP, JS</h5>
+                            <a href="https://github.com/Ogochukwu-ugo/TeamSuccess-Citadel-Realty-App" class="mx-2" title="github-link" aria-label="link text">
                             <i class="fa-brands fa-github hover:text-brand-color"></i>
                             </a>
-                            <a href="https://citadel-realty-app.netlify.app/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                            <a href="https://citadel-realty-app.netlify.app/" target="_blank" class="hover:text-brand-color cursor-pointer" title="website link" aria-label="link text">VISIT THE WEBSITE</a>
                         </div>
                     </div>
                     <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
                     <picture>
-                        <img src="../images/url-api.png" alt="Shortly-Url-Shortening-API" class="webImage object-cover">
+                        <img src="../images/url-api.png" alt="Shortly-Url-Shortening-API" class="webImage object-cover" loading="lazy" width="758" height="500">
                     </picture>
                     <div class="text-center lg:text-start my-3 md:px-4">
                         <h4 class="text-brand-color font-bold text-2xl lg:text-3xl">Shortly</h4>
-                        <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A landing page where users can shorten any URL link and also copy it.</p>
+                        <p class="text-base lg:text-xl font-semibold text-card-text my-3">A landing page where users can shorten any URL link and also copy it.</p>
                     </div>
-                    <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 md:px-6 xl:px-4">
-                        <h6>REACT, BOOTSTARP</h6>
-                        <a href="https://github.com/Ogochukwu-ugo/Shortly-Url-Shortening-API" class="mx-2">
+                    <div class="flex text-xs lg:text-sm font-semibold text-card-text text-center md:text-left px-1 md:px-6 xl:px-4">
+                        <h5>REACT, BOOTSTARP</h5>
+                        <a href="https://github.com/Ogochukwu-ugo/Shortly-Url-Shortening-API" class="mx-2" title="gitHub-link" aria-label="link text">
                         <i class="fa-brands fa-github hover:text-brand-color"></i>
                         </a>
-                        <a href="https://shortly-url-shortening-api-psi.vercel.app/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                        <a href="https://shortly-url-shortening-api-psi.vercel.app/" target="_blank" class="hover:text-brand-color cursor-pointer" title="website-link" aria-label="link text">VISIT THE WEBSITE</a>
                     </div>
                     </div>
                     <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
                     <picture>
-                        <img src="../images/todos.png" alt="Todo" class="webImage object-cover">
+                        <img src="../images/todos.png" alt="Todo" class="webImage object-cover" loading="lazy" width="758" height="500">
                     </picture>
                     <div class="text-center lg:text-start my-3 md:px-4">
                         <h4 class="text-brand-color font-bold text-2xl lg:text-3xl">Todo App</h4>
-                        <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A to-do list app that allows user to add, edit, update, and delete items. </p>
+                        <p class="text-base lg:text-xl font-semibold text-card-text my-3">A to-do list app that allows user to add, edit, update, and delete items. </p>
                     </div>
-                    <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 md:px-6 xl:px-4">
-                        <h6>HTML, BOOTSTARP, JS</h6>
-                        <a href="https://github.com/Ogochukwu-ugo/Og-Todo-App" class="mx-2">
+                    <div class="flex text-xs lg:text-sm font-semibold text-card-text text-center md:text-left px-1 md:px-6 xl:px-4">
+                        <h5>HTML, BOOTSTARP, JS</h5>
+                        <a href="https://github.com/Ogochukwu-ugo/Og-Todo-App" class="mx-2" title="gitHub-link" aria-label="link text">
                         <i class="fa-brands fa-github hover:text-brand-color"></i>
                         </a>
-                        <a href="https://ogochukwu-ugo.github.io/Og-Todo-App/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                        <a href="https://ogochukwu-ugo.github.io/Og-Todo-App/" target="_blank" class="hover:text-brand-color cursor-pointer" title="website-link" aria-label="link text">VISIT THE WEBSITE</a>
                     </div>
                     </div>
                     <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
                         <picture>
-                            <img src="../images/quzi.png" alt="Quiz-App" class="webImage object-cover">
+                            <img src="../images/quzi.png" alt="Quiz-App" class="webImage object-cover" loading="lazy" width="758" height="500">
                         </picture>
                         <div class="text-center lg:text-start my-3 md:px-4">
                             <h4 class="text-brand-color font-bold text-2xl lg:text-3xl">Quiz App</h4>
-                            <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A quiz app that allows users to put their knowledge to the test.</p>
+                            <p class="text-base lg:text-xl font-semibold text-card-text my-3">A quiz app that allows users to put their knowledge to the test.</p>
                         </div>
-                        <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 md:px-6 xl:px-4">
-                            <h6>HTML, CSS, JS</h6>
-                            <a href="https://github.com/Ogochukwu-ugo/Quiz-App" class="mx-2">
+                        <div class="flex text-xs lg:text-sm font-semibold text-card-text text-center md:text-left px-1 md:px-6 xl:px-4">
+                            <h5>HTML, CSS, JS</h5>
+                            <a href="https://github.com/Ogochukwu-ugo/Quiz-App" class="mx-2" title="gitHub-link" aria-label="link text">
                             <i class="fa-brands fa-github hover:text-brand-color"></i>
                             </a>
-                            <a href="https://ogochukwu-ugo.github.io/Quiz-App/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                            <a href="https://ogochukwu-ugo.github.io/Quiz-App/" target="_blank" class="hover:text-brand-color cursor-pointer" title="website-link" aria-label="link text">VISIT THE WEBSITE</a>
                         </div>
                     </div>
                     <div class="rounded-lg p-2 lg:p-3 mx-auto cards aspect-w-1 aspect-h-1">
                         <picture>
-                            <img src="../images/ANG.png" alt="Quiz-App" class="webImage object-cover">
+                            <img src="../images/ANG.png" alt="Quiz-App" class="webImage object-cover" loading="lazy" width="758" height="500">
                         </picture>
                         <div class="text-center lg:text-start my-3 md:px-4">
                             <h4 class="text-brand-color font-bold text-2xl lg:text-3xl">African Next Generation</h4>
-                            <p class="text-base lg:text-xl font-semibold text-slate-100 my-3">A website for a non-governmental organization that is currently being developed as a volunteer project.</p>
+                            <p class="text-base lg:text-xl font-semibold text-card-text my-3">A website for a non-governmental organization that is currently being developed as a volunteer project.</p>
                         </div>
-                        <div class="flex text-xs lg:text-sm font-semibold text-slate-100 text-center md:text-left px-1 md:px-6 xl:px-4">
-                            <h6>REACT, BOOTSTARP</h6>
-                            <a href="https://github.com/Ogochukwu-ugo/ANG" class="mx-2">
+                        <div class="flex text-xs lg:text-sm font-semibold text-card-text text-center md:text-left px-1 md:px-6 xl:px-4">
+                            <h5>REACT, BOOTSTARP</h5>
+                            <a href="https://github.com/Ogochukwu-ugo/ANG" class="mx-2" title="gitHub-link" aria-label="link text">
                             <i class="fa-brands fa-github hover:text-brand-color"></i>
                             </a>
-                            <a href="https://ang-pi.vercel.app/" target="_blank" class="hover:text-brand-color cursor-pointer">VISIT THE WEBSITE</a>
+                            <a href="https://ang-pi.vercel.app/" target="_blank" class="hover:text-brand-color cursor-pointer" title="website-link" aria-label="link text">VISIT THE WEBSITE</a>
                         </div>
                     </div>
                 </div>
-           </div>
-               
+           </div> 
         </section>
 
         <!-- Contact -->
@@ -271,9 +270,9 @@
             <p class="text-slate-50 text-sm md:text-xl font-normal my-3 md:my-6 p-4">Got a project Or In need of a new team mate to join you? <br> <span class="font-bold">Contact me. </span></p>
             <form id="contactForm" class="mx-auto p-4">
                 <input type="hidden" name="contact_number">
-                <input type="text" name="user_name" id="fullName" placeholder="Enter your name" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color" required><br>
-                <input type="email" name="user_email" id="mail" placeholder="Enter your email" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color my-3" required><br>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color" required></textarea><br>
+                <input type="text" name="user_name" id="fullName" placeholder="Enter your name" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color" aria-required="true" required><br>
+                <input type="email" name="user_email" id="mail" placeholder="Enter your email" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color my-3" aria-required="true" required><br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" class="w-full md:w-1/2 bg-transparent border border-logo-color rounded-lg p-2 outline-none text-sm text-logo-color" aria-required="true" required></textarea><br>
                 <input type="submit" value="Send Message" class="w-full md:w-1/2 bg-logo-color  rounded-lg p-3 outline-none text-sm font-bold text-brand-color my-3 cursor-pointer"/>
             </form>
         </section>
@@ -284,16 +283,16 @@
         <hr class="border-1 text-logo-color">
         <div class="flex flex-col md:flex-row justify-between items-center mx-auto">
             <div class="cursor-pointer" href="/">
-                <img src="../images/Og-logo 1.png" alt="Logo" class="w-24">
+                <img src="../images/Og-logo 1.png" alt="Logo" class="w-24" width="758" height="500">
             </div>
             <div class="flex text-logo-color justify-between items-center my-2 md:my-0 mx-auto">
-                <a href="https://github.com/Ogochukwu-ugo">
+                <a href="https://github.com/Ogochukwu-ugo" title="github-link" aria-label="link text">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/ogochukwu-ugorji1" class="mx-8">
+                <a href="https://www.linkedin.com/in/ogochukwu-ugorji1" class="mx-8" title="linkedin-link" aria-label="link text">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-               <a href="www.twitter.com/OgochukwuUgorji">
+               <a href="www.twitter.com/OgochukwuUgorji" title="twitter-link" aria-label="link text">
                     <i class="fa-brands fa-twitter"></i>
                </a>
             </div>
@@ -303,7 +302,6 @@
         </div>
     </footer>
 
-    
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -313,6 +311,5 @@
         })();   
     </script>
     <script type="text/javascript" src="./src/app.js"></script>
-   
 </body>
 </html>

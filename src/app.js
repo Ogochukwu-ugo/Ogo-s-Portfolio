@@ -51,7 +51,7 @@ const header = document.getElementById("navbar");
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
        
-        emailjs.sendForm('service_iv0qow2', 'template_q8dew5f', this)
+        emailjs.sendForm('service_iv0qow2', 'template_q8dew5f', this, 'HlCz4uQFAGd-N7lrq', )
             .then(function() {
                 console.log('SUCCESS!');
                 alert("Message sent successfully");
